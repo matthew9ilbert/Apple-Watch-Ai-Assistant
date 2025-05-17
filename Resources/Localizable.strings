@@ -1,0 +1,165 @@
+// English (Base) Localization
+
+// MARK: - General
+"general.ok" = "OK";
+"general.cancel" = "Cancel";
+"general.save" = "Save";
+"general.edit" = "Edit";
+"general.delete" = "Delete";
+"general.done" = "Done";
+"general.back" = "Back";
+"general.next" = "Next";
+"general.settings" = "Settings";
+
+// MARK: - Health & Fitness
+"health.steps" = "Steps";
+"health.heartRate" = "Heart Rate";
+"health.calories" = "Calories";
+"health.distance" = "Distance";
+"health.workout" = "Workout";
+"health.activity" = "Activity";
+"health.sleep" = "Sleep";
+"health.metrics" = "Health Metrics";
+"health.goals" = "Health Goals";
+"health.insights" = "Health Insights";
+
+// MARK: - Weather
+"weather.temperature" = "Temperature";
+"weather.humidity" = "Humidity";
+"weather.wind" = "Wind";
+"weather.precipitation" = "Precipitation";
+"weather.forecast" = "Forecast";
+"weather.current" = "Current Weather";
+"weather.hourly" = "Hourly Forecast";
+"weather.daily" = "Daily Forecast";
+"weather.alerts" = "Weather Alerts";
+
+// MARK: - Home Automation
+"home.devices" = "Devices";
+"home.scenes" = "Scenes";
+"home.automation" = "Automation";
+"home.rooms" = "Rooms";
+"home.controls" = "Controls";
+"home.settings" = "Home Settings";
+"home.addDevice" = "Add Device";
+"home.editScene" = "Edit Scene";
+"home.createAutomation" = "Create Automation";
+
+// MARK: - Assistant
+"assistant.greeting" = "How can I help you?";
+"assistant.listening" = "Listening...";
+"assistant.processing" = "Processing...";
+"assistant.error" = "Sorry, I didn't catch that";
+"assistant.retry" = "Please try again";
+"assistant.suggestions" = "Suggestions";
+"assistant.help" = "Help";
+
+// MARK: - Reminders
+"reminder.new" = "New Reminder";
+"reminder.edit" = "Edit Reminder";
+"reminder.delete" = "Delete Reminder";
+"reminder.title" = "Title";
+"reminder.date" = "Date";
+"reminder.time" = "Time";
+"reminder.location" = "Location";
+"reminder.priority" = "Priority";
+"reminder.notes" = "Notes";
+
+// MARK: - Messages
+"message.new" = "New Message";
+"message.reply" = "Reply";
+"message.send" = "Send";
+"message.recipient" = "To:";
+"message.content" = "Message";
+"message.sent" = "Sent";
+"message.delivered" = "Delivered";
+"message.failed" = "Failed to Send";
+
+// MARK: - Settings
+"settings.language" = "Language";
+"settings.notifications" = "Notifications";
+"settings.privacy" = "Privacy";
+"settings.about" = "About";
+"settings.account" = "Account";
+"settings.preferences" = "Preferences";
+"settings.support" = "Support";
+"settings.feedback" = "Send Feedback";
+
+// MARK: - Notifications
+"notification.enable" = "Enable Notifications";
+"notification.disable" = "Disable Notifications";
+"notification.types" = "Notification Types";
+"notification.schedule" = "Schedule";
+"notification.sound" = "Sound";
+"notification.vibration" = "Vibration";
+
+// MARK: - Privacy
+"privacy.data" = "Data Collection";
+"privacy.health" = "Health Data";
+"privacy.location" = "Location Services";
+"privacy.analytics" = "Analytics";
+"privacy.sharing" = "Data Sharing";
+"privacy.deletion" = "Data Deletion";
+"privacy.policy" = "Privacy Policy";
+
+// MARK: - Errors
+"error.title" = "Error";
+"error.message" = "Something went wrong";
+"error.tryAgain" = "Try Again";
+"error.dismiss" = "Dismiss";
+"error.network" = "Network Error";
+"error.connection" = "Connection Failed";
+"error.timeout" = "Request Timed Out";
+"error.unavailable" = "Service Unavailable";
+
+// MARK: - Permissions
+"permission.health" = "Health Access Required";
+"permission.location" = "Location Access Required";
+"permission.notifications" = "Notifications Access Required";
+"permission.microphone" = "Microphone Access Required";
+"permission.contacts" = "Contacts Access Required";
+"permission.home" = "Home Access Required";
+"permission.grant" = "Grant Access";
+"permission.settings" = "Open Settings";
+
+// MARK: - Onboarding
+"onboarding.welcome" = "Welcome to WatchAssistant";
+"onboarding.features" = "Discover Features";
+"onboarding.setup" = "Quick Setup";
+"onboarding.permissions" = "Required Permissions";
+"onboarding.start" = "Get Started";
+"onboarding.skip" = "Skip";
+"onboarding.next" = "Next";
+"onboarding.complete" = "Complete Setup";
+
+// MARK: - Time
+"time.now" = "Now";
+"time.today" = "Today";
+"time.tomorrow" = "Tomorrow";
+"time.yesterday" = "Yesterday";
+"time.morning" = "Morning";
+"time.afternoon" = "Afternoon";
+"time.evening" = "Evening";
+"time.night" = "Night";
+
+// MARK: - Units
+"unit.steps" = "steps";
+"unit.bpm" = "BPM";
+"unit.calories" = "cal";
+"unit.distance.km" = "km";
+"unit.distance.mi" = "mi";
+"unit.temperature.c" = "°C";
+"unit.temperature.f" = "°F";
+"unit.speed.kph" = "km/h";
+"unit.speed.mph" = "mph";
+"unit.percent" = "%";
+
+// MARK: - Voice Commands
+"voice.start" = "Start %@";
+"voice.stop" = "Stop %@";
+"voice.set" = "Set %@ to %@";
+"voice.show" = "Show %@";
+"voice.check" = "Check %@";
+"voice.create" = "Create %@";
+"voice.send" = "Send message to %@";
+"voice.remind" = "Remind me to %@";

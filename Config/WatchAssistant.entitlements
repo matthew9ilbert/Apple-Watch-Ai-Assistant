@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- HealthKit -->
+    <key>com.apple.developer.healthkit</key>
+    <true/>
+    <key>com.apple.developer.healthkit.access</key>
+    <array>
+        <string>health-records</string>
+    </array>
+    <key>com.apple.developer.healthkit.background-delivery</key>
+    <true/>
+
+    <!-- HomeKit -->
+    <key>com.apple.developer.homekit</key>
+    <true/>
+
+    <!-- Siri & Shortcuts -->
+    <key>com.apple.developer.siri</key>
+    <true/>
+    <key>com.apple.developer.intents-services</key>
+    <array>
+        <string>$(PRODUCT_BUNDLE_IDENTIFIER).IntentHandler</string>
+    </array>
+    <key>com.apple.developer.usernotifications.time-sensitive</key>
+    <true/>
+
+    <!-- Background Modes -->
+    <key>com.apple.developer.background-modes</key>
+    <array>
+        <string>audio</string>
+        <string>location</string>
+        <string>remote-notification</string>
+        <string>processing</string>
+        <string>voip</string>
+    </array>
+
+    <!-- Location Services -->
+    <key>com.apple.developer.location.always</key>
+    <true/>
+    <key>com.apple.developer.location-services</key>
+    <true/>
+
+    <!-- Network Capabilities -->
+    <key>com.apple.developer.networking.HotspotConfiguration</key>
+    <true/>
+    <key>com.apple.developer.networking.wifi-info</key>
+    <true/>
+    <key>com.apple.developer.networking.networkextension</key>
+    <array>
+        <string>app-proxy-provider</string>
+        <string>content-filter-provider</string>
+        <string>dns-proxy</string>
+        <string>packet-tunnel-provider</string>
+    </array>
+
+    <!-- App Groups -->
+    <key>com.apple.security.application-groups</key>
+    <array>
+        <string>group.com.watchassistant.shared</string>
+    </array>
+
+    <!-- iCloud -->
+    <key>com.apple.developer.icloud-container-identifiers</key>
+    <array>
+        <string>iCloud.com.watchassistant</string>
+    </array>
+    <key>com.apple.developer.icloud-services</key>
+    <array>
+        <string>CloudKit</string>
+        <string>CloudDocuments</string>
+    </array>
+    <key>com.apple.developer.ubiquity-container-identifiers</key>
+    <array>
+        <string>iCloud.com.watchassistant</string>
+    </array>
+
+    <!-- Push Notifications -->
+    <key>aps-environment</key>
+    <string>development</string>
+
+    <!-- Inter-App Communication -->
+    <key>com.apple.developer.associated-domains</key>
+    <array>
+        <string>applinks:watchassistant.com</string>
+        <string>webcredentials:watchassistant.com</string>
+    </array>
+
+    <!-- Authentication -->
+    <key>com.apple.developer.authentication-services.autofill-credential-provider</key>
+    <true/>
+
+    <!-- Protected Resources -->
+    <key>com.apple.security.personal-information.photos-library</key>
+    <true/>
+    <key>com.apple.security.personal-information.location</key>
+    <true/>
+    <key>com.apple.security.personal-information.calendars</key>
+    <true/>
+    <key>com.apple.security.personal-information.contacts</key>
+    <true/>
+
+    <!-- App Extension Support -->
+    <key>com.apple.security.application-groups</key>
+    <array>
+        <string>group.com.watchassistant.shared</string>
+    </array>
+    <key>com.apple.security.temporary-exception.files.home-relative-path.read-write</key>
+    <array>
+        <string>/Library/Caches/com.watchassistant/</string>
+    </array>
+
+    <!-- App Store Connect API -->
+    <key>com.apple.developer.appstoreconnect-api</key>
+    <true/>
+
+    <!-- Keychain Sharing -->
+    <key>keychain-access-groups</key>
+    <array>
+        <string>$(AppIdentifierPrefix)com.watchassistant</string>
+    </array>
+
+    <!-- Additional Capabilities -->
+    <key>com.apple.developer.default-data-protection</key>
+    <string>NSFileProtectionComplete</string>
+    <key>com.apple.developer.devicecheck.appattest-environment</key>
+    <string>development</string>
+    <key>com.apple.developer.group-session</key>
+    <true/>
+    <key>com.apple.developer.healthkit.recalibration</key>
+    <true/>
+    <key>com.apple.developer.system-extension.install</key>
+    <true/>
+    <key>com.apple.developer.usernotifications.communication</key>
+    <true/>
+    <key>com.apple.developer.weatherkit</key>
+    <true/>
+</dict>
+</plist>

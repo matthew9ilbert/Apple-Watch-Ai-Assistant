@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>INIntents</key>
+    <array>
+        <!-- Start Workout Intent -->
+        <dict>
+            <key>INIntentName</key>
+            <string>StartWorkout</string>
+            <key>INIntentTitle</key>
+            <string>Start a workout</string>
+            <key>INIntentDescription</key>
+            <string>Start tracking a workout activity</string>
+            <key>INIntentParameters</key>
+            <array>
+                <dict>
+                    <key>INIntentParameterName</key>
+                    <string>workoutType</string>
+                    <key>INIntentParameterTitle</key>
+                    <string>Workout Type</string>
+                    <key>INIntentParameterType</key>
+                    <string>String</string>
+                    <key>INIntentParameterEnumValues</key>
+                    <array>
+                        <string>Running</string>
+                        <string>Walking</string>
+                        <string>Cycling</string>
+                        <string>Swimming</string>
+                        <string>Yoga</string>
+                        <string>HIIT</string>
+                    </array>
+                </dict>
+            </array>
+            <key>INIntentResponse</key>
+            <dict>
+                <key>INIntentResponseName</key>
+                <string>StartWorkoutResponse</string>
+                <key>INIntentResponseCodes</key>
+                <array>
+                    <dict>
+                        <key>INIntentResponseCodeName</key>
+                        <string>success</string>
+                        <key>INIntentResponseCodeSuccess</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>INIntentResponseCodeName</key>
+                        <string>failure</string>
+                        <key>INIntentResponseCodeSuccess</key>
+                        <false/>
+                    </dict>
+                </array>
+            </dict>
+        </dict>
+        
+        <!-- Check Weather Intent -->
+        <dict>
+            <key>INIntentName</key>
+            <string>CheckWeather</string>
+            <key>INIntentTitle</key>
+            <string>Check weather</string>
+            <key>INIntentDescription</key>
+            <string>Get current weather conditions</string>
+            <key>INIntentResponse</key>
+            <dict>
+                <key>INIntentResponseName</key>
+                <string>CheckWeatherResponse</string>
+                <key>INIntentResponseProperties</key>
+                <array>
+                    <dict>
+                        <key>INIntentResponsePropertyName</key>
+                        <string>temperature</string>
+                        <key>INIntentResponsePropertyType</key>
+                        <string>String</string>
+                    </dict>
+                    <dict>
+                        <key>INIntentResponsePropertyName</key>
+                        <string>condition</string>
+                        <key>INIntentResponsePropertyType</key>
+                        <string>String</string>
+                    </dict>
+                </array>
+                <key>INIntentResponseCodes</key>
+                <array>
+                    <dict>
+                        <key>INIntentResponseCodeName</key>
+                        <string>success</string>
+                        <key>INIntentResponseCodeSuccess</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>INIntentResponseCodeName</key>
+                        <string>failure</string>
+                        <key>INIntentResponseCodeSuccess</key>
+                        <false/>
+                    </dict>
+                </array>
+            </dict>
+        </dict>
+        
+        <!-- Control Home Device Intent -->
+        <dict>
+            <key>INIntentName</key>
+            <string>ControlHomeDevice</string>
+            <key>INIntentTitle</key>
+            <string>Control home device</string>
+            <key>INIntentDescription</key>
+            <string>Control a smart home device</string>
+            <key>INIntentParameters</key>
+            <array>
+                <dict>
+                    <key>INIntentParameterName</key>
+                    <string>deviceIdentifier</string>
+                    <key>INIntentParameterTitle</key>
+                    <string>Device</string>
+                    <key>INIntentParameterType</key>
+                    <string>String</string>
+                </dict>
+                <dict>
+                    <key>INIntentParameterName</key>
+                    <string>action</string>
+                    <key>INIntentParameterTitle</key>
+                    <string>Action</string>
+                    <key>INIntentParameterType</key>
+                    <string>String</string>
+                    <key>INIntentParameterEnumValues</key>
+                    <array>
+                        <string>TurnOn</string>
+                        <string>TurnOff</string>
+                        <string>Toggle</string>
+                    </array>
+                </dict>
+            </array>
+            <key>INIntentResponse</key>
+            <dict>
+                <key>INIntentResponseName</key>
+                <string>ControlHomeDeviceResponse</string>
+                <key>INIntentResponseCodes</key>
+                <array>
+                    <dict>
+                        <key>INIntentResponseCodeName</key>
+                        <string>success</string>
+                        <key>INIntentResponseCodeSuccess</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>INIntentResponseCodeName</key>
+                        <string>failure</string>
+                        <key>INIntentResponseCodeSuccess</key>
+                        <false/>
+                    </dict>
+                </array>
+            </dict>
+        </dict>
+        
+        <!-- Set Reminder Intent -->
+        <dict>
+            <key>INIntentName</key>
+            <string>SetReminder</string>
+            <key>INIntentTitle</key>
+            <string>Set a reminder</string>
+            <key>INIntentDescription</key>
+            <string>Create a new reminder</string>
+            <key>INIntentParameters</key>
+            <array>
+                <dict>
+                    <key>INIntentParameterName</key>
+                    <string>title</string>
+                    <key>INIntentParameterTitle</key>
+                    <string>Title</string>
+                    <key>INIntentParameterType</key>
+                    <string>String</string>
+                </dict>
+                <dict>
+                    <key>INIntentParameterName</key>
+                    <string>dueDate</string>
+                    <key>INIntentParameterTitle</key>
+                    <string>Due Date</string>
+                    <key>INIntentParameterType</key>
+                    <string>DateTime</string>
+                    <key>INIntentParameterOptional</key>
+                    <true/>
+                </dict>
+            </array>
+            <key>INIntentResponse</key>
+            <dict>
+                <key>INIntentResponseName</key>
+                <string>SetReminderResponse</string>
+                <key>INIntentResponseCodes</key>
+                <array>
+                    <dict>
+                        <key>INIntentResponseCodeName</key>
+                        <string>success</string>
+                        <key>INIntentResponseCodeSuccess</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>INIntentResponseCodeName</key>
+                        <string>failure</string>
+                        <key>INIntentResponseCodeSuccess</key>
+                        <false/>
+                    </dict>
+                </array>
+            </dict>
+        </dict>
+        
+        <!-- Send Message Intent -->
+        <dict>
+            <key>INIntentName</key>
+            <string>SendMessage</string>
+            <key>INIntentTitle</key>
+            <string>Send a message</string>
+            <key>INIntentDescription</key>
+            <string>Send a message to a contact</string>
+            <key>INIntentParameters</key>
+            <array>
+                <dict>
+                    <key>INIntentParameterName</key>
+                    <string>recipient</string>
+                    <key>INIntentParameterTitle</key>
+                    <string>Recipient</string>
+                    <key>INIntentParameterType</key>
+                    <string>Person</string>
+                </dict>
+                <dict>
+                    <key>INIntentParameterName</key>
+                    <string>content</string>
+                    <key>INIntentParameterTitle</key>
+                    <string>Message</string>
+                    <key>INIntentParameterType</key>
+                    <string>String</string>
+                </dict>
+            </array>
+            <key>INIntentResponse</key>
+            <dict>
+                <key>INIntentResponseName</key>
+                <string>SendMessageResponse</string>
+                <key>INIntentResponseCodes</key>
+                <array>
+                    <dict>
+                        <key>INIntentResponseCodeName</key>
+                        <string>success</string>
+                        <key>INIntentResponseCodeSuccess</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>INIntentResponseCodeName</key>
+                        <string>failure</string>
+                        <key>INIntentResponseCodeSuccess</key>
+                        <false/>
+                    </dict>
+                </array>
+            </dict>
+        </dict>
+        
+        <!-- Execute Shortcut Intent -->
+        <dict>
+            <key>INIntentName</key>
+            <string>ExecuteShortcut</string>
+            <key>INIntentTitle</key>
+            <string>Execute a shortcut</string>
+            <key>INIntentDescription</key>
+            <string>Run a custom shortcut</string>
+            <key>INIntentParameters</key>
+            <array>
+                <dict>
+                    <key>INIntentParameterName</key>
+                    <string>shortcutName</string>
+                    <key>INIntentParameterTitle</key>
+                    <string>Shortcut Name</string>
+                    <key>INIntentParameterType</key>
+                    <string>String</string>
+                </dict>
+            </array>
+            <key>INIntentResponse</key>
+            <dict>
+                <key>INIntentResponseName</key>
+                <string>ExecuteShortcutResponse</string>
+                <key>INIntentResponseCodes</key>
+                <array>
+                    <dict>
+                        <key>INIntentResponseCodeName</key>
+                        <string>success</string>
+                        <key>INIntentResponseCodeSuccess</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>INIntentResponseCodeName</key>
+                        <string>failure</string>
+                        <key>INIntentResponseCodeSuccess</key>
+                        <false/>
+                    </dict>
+                </array>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
