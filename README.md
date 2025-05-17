@@ -208,10 +208,11 @@ All data is processed according to our privacy policy and Apple's guidelines.
 ## Support
 
 For technical support or feature requests:
-- Email: support@watchassistant.com
-- Website: https://watchassistant.com
-- Documentation: https://docs.watchassistant.com
+- Email: sad.duck.weko@mask.me
 
 ## License
 
-© 2023 WatchAssistant. All rights reserved.
+- Independant
+
+
+© 2025 WatchAssistant. All rights reserved.
