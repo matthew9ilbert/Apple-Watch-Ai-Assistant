@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="UserPreference" representedClassName="UserPreference" syncable="YES">
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="key" optional="NO" attributeType="String"/>
+        <attribute name="modificationDate" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="value" optional="YES" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="key"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="HealthMetric" representedClassName="HealthMetric" syncable="YES">
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="metricType" optional="NO" attributeType="String"/>
+        <attribute name="modificationDate" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="timestamp" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="unit" optional="NO" attributeType="String"/>
+        <attribute name="value" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="WorkoutSession" representedClassName="WorkoutSession" syncable="YES">
+        <attribute name="activityType" optional="NO" attributeType="String"/>
+        <attribute name="averageHeartRate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="calories" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="duration" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="modificationDate" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="startDate" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="metrics" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WorkoutMetric" inverseName="session" inverseEntity="WorkoutMetric"/>
+    </entity>
+    <entity name="WorkoutMetric" representedClassName="WorkoutMetric" syncable="YES">
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="metricType" optional="NO" attributeType="String"/>
+        <attribute name="modificationDate" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="timestamp" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="value" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="session" optional="NO" maxCount="1" deletionRule="Nullify" destinationEntity="WorkoutSession" inverseName="metrics" inverseEntity="WorkoutSession"/>
+    </entity>
+    <entity name="Reminder" representedClassName="Reminder" syncable="YES">
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dueDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="isCompleted" optional="NO" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="locationLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="locationLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String"/>
+        <attribute name="modificationDate" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="priority" optional="NO" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="recurringInterval" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="recurringType" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="NO" attributeType="String"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES">
+        <attribute name="content" optional="NO" attributeType="String"/>
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="isFromUser" optional="NO" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="modificationDate" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="recipientIdentifier" optional="NO" attributeType="String"/>
+        <attribute name="recipientName" optional="NO" attributeType="String"/>
+        <attribute name="status" optional="NO" attributeType="String"/>
+        <attribute name="timestamp" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="WeatherData" representedClassName="WeatherData" syncable="YES">
+        <attribute name="condition" optional="NO" attributeType="String"/>
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="humidity" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="latitude" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="locationName" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="modificationDate" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="temperature" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="timestamp" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="windDirection" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="windSpeed" optional="NO" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="VoiceCommand" representedClassName="VoiceCommand" syncable="YES">
+        <attribute name="category" optional="NO" attributeType="String"/>
+        <attribute name="command" optional="NO" attributeType="String"/>
+        <attribute name="createdAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="modificationDate" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="successful" optional="NO" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="timestamp" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+</model>
