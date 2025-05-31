@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSExtension</key>
+    <dict>
+        <key>NSExtensionAttributes</key>
+        <dict>
+            <key>IntentsRestrictedWhileLocked</key>
+            <array>
+                <string>SendMessageIntent</string>
+                <string>ControlHomeDeviceIntent</string>
+            </array>
+            <key>IntentsSupported</key>
+            <array>
+                <string>StartWorkoutIntent</string>
+                <string>CheckWeatherIntent</string>
+                <string>ControlHomeDeviceIntent</string>
+                <string>SetReminderIntent</string>
+                <string>SendMessageIntent</string>
+                <string>ExecuteShortcutIntent</string>
+            </array>
+        </dict>
+        <key>NSExtensionPointIdentifier</key>
+        <string>com.apple.intents-service</string>
+        <key>NSExtensionPrincipalClass</key>
+        <string>$(PRODUCT_MODULE_NAME).IntentHandler</string>
+    </dict>
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundlePackageType</key>
+    <string>XPC!</string>
+    <key>CFBundleName</key>
+    <string>WatchAssistant Intents</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>NSUserActivityTypes</key>
+    <array>
+        <string>StartWorkoutIntent</string>
+        <string>CheckWeatherIntent</string>
+        <string>ControlHomeDeviceIntent</string>
+        <string>SetReminderIntent</string>
+        <string>SendMessageIntent</string>
+        <string>ExecuteShortcutIntent</string>
+    </array>
+    <key>NSSiriUsageDescription</key>
+    <string>WatchAssistant uses Siri to help you control your smart home devices, track workouts, set reminders, and perform other tasks hands-free.</string>
+    <key>NSShortcutsUsageDescription</key>
+    <string>WatchAssistant can create shortcuts to automate your daily tasks and routines.</string>
+    <key>IntentPhrases</key>
+    <array>
+        <dict>
+            <key>IntentName</key>
+            <string>StartWorkoutIntent</string>
+            <key>IntentExamples</key>
+            <array>
+                <string>Start a running workout</string>
+                <string>Begin cycling workout</string>
+                <string>Start yoga session</string>
+            </array>
+        </dict>
+        <dict>
+            <key>IntentName</key>
+            <string>CheckWeatherIntent</string>
+            <key>IntentExamples</key>
+            <array>
+                <string>What's the weather like?</string>
+                <string>Check current weather</string>
+                <string>Get weather update</string>
+            </array>
+        </dict>
+        <dict>
+            <key>IntentName</key>
+            <string>ControlHomeDeviceIntent</string>
+            <key>IntentExamples</key>
+            <array>
+                <string>Turn on living room lights</string>
+                <string>Set bedroom temperature to 72</string>
+                <string>Lock the front door</string>
+            </array>
+        </dict>
+        <dict>
+            <key>IntentName</key>
+            <string>SetReminderIntent</string>
+            <key>IntentExamples</key>
+            <array>
+                <string>Remind me to call mom tomorrow</string>
+                <string>Set a reminder for meeting at 2 PM</string>
+                <string>Create reminder for groceries</string>
+            </array>
+        </dict>
+        <dict>
+            <key>IntentName</key>
+            <string>SendMessageIntent</string>
+            <key>IntentExamples</key>
+            <array>
+                <string>Send message to John</string>
+                <string>Text Sarah I'll be late</string>
+                <string>Message mom about dinner</string>
+            </array>
+        </dict>
+        <dict>
+            <key>IntentName</key>
+            <string>ExecuteShortcutIntent</string>
+            <key>IntentExamples</key>
+            <array>
+                <string>Run morning routine</string>
+                <string>Execute night mode shortcut</string>
+                <string>Start workout routine</string>
+            </array>
+        </dict>
+    </array>
+    <key>IntentVocabulary</key>
+    <dict>
+        <key>WorkoutTypes</key>
+        <array>
+            <string>running</string>
+            <string>walking</string>
+            <string>cycling</string>
+            <string>swimming</string>
+            <string>yoga</string>
+            <string>HIIT</string>
+        </array>
+        <key>HomeActions</key>
+        <array>
+            <string>turn on</string>
+            <string>turn off</string>
+            <string>toggle</string>
+            <string>set</string>
+            <string>adjust</string>
+            <string>lock</string>
+            <string>unlock</string>
+        </array>
+        <key>TimeExpressions</key>
+        <array>
+            <string>morning</string>
+            <string>afternoon</string>
+            <string>evening</string>
+            <string>tonight</string>
+            <string>tomorrow</string>
+            <string>next week</string>
+        </array>
+    </dict>
+    <key>AppShortcuts</key>
+    <array>
+        <dict>
+            <key>ShortcutName</key>
+            <string>Morning Routine</string>
+            <key>ShortcutDescription</key>
+            <string>Start your day with weather, schedule, and home automation</string>
+            <key>SuggestedInvocationPhrase</key>
+            <string>Start my morning routine</string>
+        </dict>
+        <dict>
+            <key>ShortcutName</key>
+            <string>Workout Mode</string>
+            <key>ShortcutDescription</key>
+            <string>Begin workout tracking and set Do Not Disturb</string>
+            <key>SuggestedInvocationPhrase</key>
+            <string>Start workout mode</string>
+        </dict>
+        <dict>
+            <key>ShortcutName</key>
+            <string>Night Mode</string>
+            <key>ShortcutDescription</key>
+            <string>Prepare your environment for sleep</string>
+            <key>SuggestedInvocationPhrase</key>
+            <string>Enable night mode</string>
+        </dict>
+    </array>
+</dict>
+</plist>

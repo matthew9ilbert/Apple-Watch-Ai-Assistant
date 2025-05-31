@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Basic App Information -->
+    <key>CFBundleName</key>
+    <string>WatchAssistant</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    
+    <!-- Required device capabilities -->
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>armv7</string>
+        <string>healthkit</string>
+        <string>location-services</string>
+        <string>microphone</string>
+    </array>
+    
+    <!-- Permission Usage Descriptions -->
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>WatchAssistant uses HealthKit to track your workouts, monitor your heart rate, and provide personalized health insights.</string>
+    <key>NSHealthShareUsageDescription</key>
+    <string>WatchAssistant accesses your health data to provide personalized recommendations and track your fitness progress.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Your location is used to provide weather updates and location-based reminders.</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>WatchAssistant uses your location to automate home controls and provide location-based notifications.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>The microphone is used for voice commands and Siri integration.</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>Speech recognition enables voice control and natural language commands.</string>
+    <key>NSHomeKitUsageDescription</key>
+    <string>HomeKit access allows you to control your smart home devices through WatchAssistant.</string>
+    <key>NSContactsUsageDescription</key>
+    <string>Contacts access enables message sending and contact-based reminders.</string>
+    <key>NSCalendarsUsageDescription</key>
+    <string>Calendar access allows WatchAssistant to create and manage your schedule and reminders.</string>
+    <key>NSRemindersUsageDescription</key>
+    <string>Reminders access enables task management and automated scheduling.</string>
+    <key>NSMotionUsageDescription</key>
+    <string>Motion data is used to track workouts and daily activity.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Photo access is used for customizing your profile and sharing workout results.</string>
+    <key>NSAppleMusicUsageDescription</key>
+    <string>Music access enables workout playlist control and audio features.</string>
+    <key>NSUserNotificationsUsageDescription</key>
+    <string>Notifications keep you updated with important alerts, reminders, and health insights.</string>
+    
+    <!-- App Transport Security -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>watchassistant.com</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <false/>
+                <key>NSExceptionRequiresForwardSecrecy</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.3</string>
+            </dict>
+        </dict>
+    </dict>
+    
+    <!-- Background Modes -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>audio</string>
+        <string>location</string>
+        <string>remote-notification</string>
+        <string>bluetooth-central</string>
+        <string>bluetooth-peripheral</string>
+        <string>fetch</string>
+        <string>processing</string>
+    </array>
+    
+    <!-- App Shortcuts -->
+    <key>AppShortcuts</key>
+    <array>
+        <dict>
+            <key>SKShortcutType</key>
+            <string>StartWorkout</string>
+            <key>SKShortcutTitle</key>
+            <string>Start Workout</string>
+            <key>SKShortcutDescription</key>
+            <string>Begin a new workout session</string>
+        </dict>
+        <dict>
+            <key>SKShortcutType</key>
+            <string>CheckWeather</string>
+            <key>SKShortcutTitle</key>
+            <string>Check Weather</string>
+            <key>SKShortcutDescription</key>
+            <string>Get current weather conditions</string>
+        </dict>
+        <dict>
+            <key>SKShortcutType</key>
+            <string>HomeControl</string>
+            <key>SKShortcutTitle</key>
+            <string>Home Control</string>
+            <key>SKShortcutDescription</key>
+            <string>Control smart home devices</string>
+        </dict>
+    </array>
+    
+    <!-- Watch App Configuration -->
+    <key>WKApplication</key>
+    <true/>
+    <key>WKWatchKitApp</key>
+    <true/>
+    <key>WKCompanionAppBundleIdentifier</key>
+    <string>com.watchassistant.app</string>
+    
+    <!-- Supported Watch Complications -->
+    <key>CLKComplicationSupportedFamilies</key>
+    <array>
+        <string>CLKComplicationFamilyModularSmall</string>
+        <string>CLKComplicationFamilyModularLarge</string>
+        <string>CLKComplicationFamilyUtilitarianSmall</string>
+        <string>CLKComplicationFamilyUtilitarianLarge</string>
+        <string>CLKComplicationFamilyCircularSmall</string>
+        <string>CLKComplicationFamilyExtraLarge</string>
+        <string>CLKComplicationFamilyGraphicCorner</string>
+        <string>CLKComplicationFamilyGraphicBezel</string>
+        <string>CLKComplicationFamilyGraphicCircular</string>
+        <string>CLKComplicationFamilyGraphicRectangular</string>
+    </array>
+    
+    <!-- Localization -->
+    <key>CFBundleLocalizations</key>
+    <array>
+        <string>en</string>
+        <string>es</string>
+        <string>fr</string>
+        <string>de</string>
+        <string>it</string>
+        <string>ja</string>
+        <string>zh-Hans</string>
+        <string>zh-Hant</string>
+    </array>
+    
+    <!-- Associated Domains -->
+    <key>com.apple.developer.associated-domains</key>
+    <array>
+        <string>applinks:watchassistant.com</string>
+        <string>webcredentials:watchassistant.com</string>
+    </array>
+    
+    <!-- App Groups -->
+    <key>com.apple.security.application-groups</key>
+    <array>
+        <string>group.com.watchassistant.shared</string>
+    </array>
+    
+    <!-- Privacy - Tracking -->
+    <key>NSUserTrackingUsageDescription</key>
+    <string>Your data helps us improve the app and provide personalized experiences. We never share your personal information with third parties.</string>
+</dict>
+</plist>
